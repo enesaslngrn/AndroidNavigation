@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fourths_graph"
+    app:startDestination="@id/fourthFragment">
+
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.androidnavigation.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourthFragment_to_fourth2Fragment"
+            app:destination="@id/fourth2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourth2Fragment"
+        android:name="com.example.androidnavigation.Fourth2Fragment"
+        android:label="fragment_fourth2"
+        tools:layout="@layout/fragment_fourth2" />
+</navigation>
